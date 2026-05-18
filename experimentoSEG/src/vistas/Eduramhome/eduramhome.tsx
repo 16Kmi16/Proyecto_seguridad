@@ -59,7 +59,7 @@ export default function EduramHome() {
             <div className="ms-card-footer">
               <button className="ms-btn-options">
                 <img
-                  src="https://aadcdn.msauthimages.net/dbd5a2dd-rshqmq5hg52t2ljqhfnhur5nfs-dr-aqarrgz8s-ivc/logintenantbranding/0/favicon?ts=638451637260342289"
+                  src="https://aadcdn.msauth.net/shared/1.0/content/images/signin-options_3e3f6b73c3f310c31d2c4d131a8ab8c6.svg"
                   alt="key"
                   className="ms-key-icon"
                 />
