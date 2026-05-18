@@ -20,9 +20,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./experimentoSEG
 
       - name: Build
         run: npm run build
+        working-directory: ./experimentoSEG
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
@@ -30,7 +32,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3
         with:
-          publish-dir: './dist'
+          publish-dir: './experimentoSEG/dist'
           production-branch: main
           production-deploy: true
         env:
