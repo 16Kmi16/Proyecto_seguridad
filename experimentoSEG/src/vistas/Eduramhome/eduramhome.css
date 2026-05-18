@@ -1,0 +1,249 @@
+/* src/vistas/Eduramhome/eduramhome.css */
+
+.ms-background {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", Roboto, sans-serif;
+  background-image: url('https://aadcdn.msauthimages.net/dbd5a2dd-rshqmq5hg52t2ljqhfnhur5nfs-dr-aqarrgz8s-ivc/logintenantbranding/0/illustration?ts=637932641901023606');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #1b1b1b;
+  overflow: hidden;
+}
+
+.ms-overlay {
+  /* cambia solo esta línea */
+  background-color: rgba(0, 0, 0, 0.545);   /* ← más oscuro */
+  /* el resto igual */
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 4px;
+}
+
+.ms-card {
+  width: 440px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0;
+}
+
+.ms-card-content {
+  padding: 44px 44px 28px 44px;
+  text-align: left;
+}
+
+.ms-title {
+  color: #0067b8;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1;
+}
+
+.ms-subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.ms-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #666;
+  padding: 6px 0;
+  font-size: 15px;
+  margin-top: 8px;
+  outline: none;
+  transition: border-color 0.2s;
+  background: transparent;
+  /* Anula el border-radius global de button/input */
+  border-radius: 0;
+}
+
+.ms-input:focus {
+  border-bottom: 2px solid #0067b8;
+}
+
+.ms-link-text {
+  color: #0067b8;
+  font-size: 13px;
+  margin: 14px 0 28px 0;
+  cursor: pointer;
+}
+
+.ms-link-text:hover { color: #005da6; }
+
+.ms-button-group {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ms-btn-primary {
+  background-color: #0067b8;
+  color: white;
+  border: none;
+  border-radius: 0;
+  padding: 8px 28px;
+  font-size: 15px;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.ms-btn-primary:hover { background-color: #005da6; }
+
+.ms-tenant-branding {
+  background-color: #f2f2f2;
+  padding: 24px 44px 36px 44px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.ms-tenant-branding p { margin: 0; }
+
+.ms-card-footer {
+  width: 440px;
+  max-width: calc(100vw - 32px);
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  padding: 12px 44px;
+  border-radius: 0;
+  margin-top: 15px;
+}
+
+.ms-btn-options {
+  background: none;
+  border: none;
+  color: #1b1b1b;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  border-radius: 0;
+}
+
+.ms-key-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.ms-page-footer {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.ms-page-footer a {
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.ms-page-footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Animación slide */
+@keyframes slideInFromRight {
+  from { transform: translateX(60px); opacity: 0; }
+  to   { transform: translateX(0);    opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-60px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+.ms-card-content.slide-in-right {
+  animation: slideInFromRight 0.25s ease-out;
+}
+
+.ms-card-content.slide-in-left {
+  animation: slideInFromLeft 0.25s ease-out;
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  .ms-overlay {
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 0;
+    /* El overlay sigue cubriendo todo con el fondo */
+  }
+
+  .ms-card {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .ms-card-footer {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .ms-card-content,
+  .ms-tenant-branding,
+  .ms-card-footer {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .ms-page-footer {
+    /* En móvil lo ponemos dentro del flujo, no absolute */
+    position: static;
+    justify-content: center;
+    padding: 20px 0 16px;
+  }
+
+  .ms-page-footer a {
+    /* En móvil el fondo puede ser blanco, ponemos color oscuro */
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.ms-back-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ms-back-btn {
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  cursor: pointer;
+  color: #1b1b1b;
+  padding: 0;
+  line-height: 1;
+  min-height: unset;
+}
+
+.ms-back-btn:hover {
+  background: none;
+  border-color: transparent;
+}
+
+.ms-email-display {
+  font-size: 14px;
+  color: #1b1b1b;
+}
