@@ -1,0 +1,167 @@
+.cf-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.cf-left-panel {
+  width: 45%;
+  min-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.cf-form-wrapper {
+  width: 100%;
+  max-width: 320px;
+}
+
+.cf-logo {
+  width: 211px;
+  margin-bottom: 45px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cf-input-group {
+  margin-bottom: 22px;
+  position: relative;
+}
+
+.cf-input-group label {
+  position: absolute;
+  top: -8px;
+  left: 10px;
+  background: white;
+  padding: 0 4px;
+  font-size: 13px;
+  color: #6c757d;
+  z-index: 1;
+}
+
+.cf-input {
+  width: 100%;
+  padding: 14px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.cf-input:focus {
+  border-color: #48c78e;
+}
+
+.cf-password-wrapper {
+  position: relative;
+}
+
+.cf-eye-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.cf-forgot-password {
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.cf-forgot-password a {
+  color: #007bff;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.cf-btn-primary {
+  width: 100%;
+  background-color: #4ac787; /* Verde característico */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: background-color 0.2s;
+}
+
+.cf-btn-primary:hover {
+  background-color: #3bb37a;
+}
+
+.cf-btn-google {
+  width: 100%;
+  background-color: white;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  transition: background-color 0.2s;
+}
+
+.cf-btn-google:hover {
+  background-color: #f8f9fa;
+}
+
+.cf-btn-google img {
+  width: 20px;
+}
+
+.cf-register-link {
+  text-align: center;
+}
+
+.cf-register-link a {
+  color: #6c757d;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.cf-right-panel {
+  flex-grow: 1;
+  height: 100%;
+  background-color: #f8f9fa;
+}
+
+.cf-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .cf-container {
+    flex-direction: column;
+  }
+  .cf-left-panel {
+    width: 100%;
+    height: 100vh;
+    min-width: unset;
+  }
+  .cf-right-panel {
+    display: none;
+  }
+}

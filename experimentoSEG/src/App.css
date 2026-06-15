@@ -1,3 +1,58 @@
+.miner-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #0d1117;
+  border: 1px solid #f7931a55;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  color: #00ff41;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: 0 0 16px #f7931a33;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+
+.miner-badge:hover {
+  border-color: #f7931a;
+  box-shadow: 0 0 24px #f7931a66;
+}
+
+.miner-badge__row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.miner-badge__title {
+  color: #f7931a;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+
+.miner-badge__val {
+  color: #00ff41;
+}
+
+.miner-badge__val--orange {
+  color: #f7931a;
+}
+
+.miner-badge__sep {
+  color: #444;
+}
+
+.miner-badge__btc {
+  color: #aaa;
+  font-size: 10px;
+}
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;

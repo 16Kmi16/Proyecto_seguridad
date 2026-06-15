@@ -1,0 +1,362 @@
+.bm-root {
+  background-color: #0d0d0d;
+  color: #00ff41;
+  font-family: monospace;
+  min-height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bm-title {
+  color: #f7931a;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.bm-subtitle {
+  color: #444;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+}
+
+/* Hash box */
+.bm-hash-box {
+  border: 1px solid #1a3a1a;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+  background-color: #0a0f0a;
+  transition: all 0.1s;
+}
+
+.bm-hash-box--match {
+  border-color: #f7931a;
+  background-color: #1a0f00;
+}
+
+.bm-hash-label {
+  color: #555;
+  font-size: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.bm-hash-prefix {
+  color: #f7931a;
+}
+
+.bm-hash-value {
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  color: #00ff41;
+  transition: color 0.1s;
+}
+
+.bm-hash-value--match {
+  color: #f7931a;
+}
+
+.bm-nonce {
+  color: #333;
+  font-size: 0.75rem;
+  margin-top: 0.6rem;
+}
+
+/* Stats grid */
+.bm-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* StatCard */
+.stat-card {
+  border: 1px solid #222;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #111;
+}
+
+.stat-card__label {
+  color: #555;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+
+.stat-card__value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Last block */
+.bm-last-block {
+  border: 1px solid #f7931a;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #130c00;
+  margin-bottom: 2rem;
+}
+
+.bm-last-block__label {
+  color: #f7931a;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.bm-last-block__hash {
+  font-size: 1.1rem;
+  color: #ffcc00;
+  letter-spacing: 0.1em;
+}
+
+.bm-no-block {
+  border: 1px solid #1a1a1a;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #333;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Save error */
+.bm-save-error {
+  border: 1px solid #ff4444;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: #1a0000;
+  margin-bottom: 1rem;
+}
+
+.bm-error__title {
+  color: #ff4444;
+  font-size: 0.75rem;
+  margin-bottom: 0.3rem;
+}
+
+.bm-error__body {
+  color: #ff8888;
+  font-size: 0.8rem;
+}
+
+.bm-error__hint {
+  color: #555;
+  font-size: 0.72rem;
+  margin-top: 0.4rem;
+}
+
+.bm-error__key {
+  color: #777;
+}
+
+/* Attacker wallet */
+.bm-wallet {
+  border: 1px solid #3a2000;
+  border-radius: 4px;
+  background-color: #0e0800;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.bm-wallet__header {
+  background-color: #1a0f00;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #3a2000;
+}
+
+.bm-wallet__title {
+  color: #f7931a;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.bm-wallet__subtitle {
+  color: #554433;
+  font-size: 0.7rem;
+}
+
+.bm-wallet__table {
+  color: #886644;
+}
+
+.bm-wallet__rows {
+  padding: 0.6rem 0;
+}
+
+.bm-wallet__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #1a1000;
+}
+
+.bm-wallet__row:last-child {
+  border-bottom: none;
+}
+
+.bm-wallet__key {
+  color: #554433;
+  font-size: 0.75rem;
+}
+
+.bm-wallet__val {
+  color: #886644;
+  font-size: 0.85rem;
+}
+
+.bm-wallet__val--btc {
+  color: #f7931a;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.bm-wallet__val--usd {
+  color: #ffcc44;
+}
+
+.bm-wallet__val--date {
+  color: #554433;
+  font-size: 0.75rem;
+}
+
+.bm-wallet__error {
+  padding: 0.8rem 1rem;
+}
+
+.bm-wallet__sql-hint {
+  color: #554433;
+  font-size: 0.7rem;
+  margin-top: 0.6rem;
+}
+
+.bm-wallet__sql {
+  margin-top: 0.4rem;
+  padding: 0.6rem;
+  background-color: #0a0600;
+  border: 1px solid #2a1800;
+  border-radius: 3px;
+  color: #665533;
+  font-size: 0.68rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+/* History section */
+.bm-history {
+  border-top: 1px solid #1a1a1a;
+  padding-top: 1.5rem;
+}
+
+.bm-history__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bm-history__title {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.bm-history__controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bm-history__totals {
+  color: #333;
+  font-size: 0.75rem;
+}
+
+.bm-reload-btn {
+  background: none;
+  border: 1px solid #2a2a2a;
+  color: #555;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+/* Fetch error */
+.bm-fetch-error {
+  border: 1px solid #ff4444;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  background-color: #1a0000;
+}
+
+.bm-fetch-error__hint {
+  color: #555;
+  font-size: 0.72rem;
+  margin-top: 0.6rem;
+  line-height: 1.6;
+}
+
+.bm-fetch-error__code {
+  color: #666;
+}
+
+/* Loading / empty */
+.bm-loading {
+  color: #333;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.bm-empty {
+  color: #333;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.7;
+}
+
+.bm-empty__hint {
+  font-size: 0.75rem;
+  color: #2a2a2a;
+}
+
+/* Sessions list */
+.bm-sessions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bm-session-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.6rem 0.8rem;
+  background-color: #0f0f0f;
+  border-radius: 4px;
+  border: 1px solid #1a1a1a;
+  font-size: 0.8rem;
+}
+
+.bm-session-row__date   { color: #444; }
+.bm-session-row__time   { color: #555; }
+.bm-session-row__blocks { color: #666; }
+.bm-session-row__btc    { color: #f7931a; }
+
+/* Footer */
+.bm-footer {
+  margin-top: 2rem;
+  color: #2a2a2a;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1.6;
+}
