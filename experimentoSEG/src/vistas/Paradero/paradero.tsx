@@ -20,10 +20,8 @@ export default function Paradero() {
       <header className="rm-header">
         <div className="rm-header-inner">
           <div className="rm-logo-block">
-            <div className="rm-logo-box">
-              <span className="rm-logo-text">red</span>
-            </div>
-            <span className="rm-logo-subtitle">Metropolitana de Movilidad</span>
+
+   
           </div>
           <nav className="rm-nav-links">
             <a href="#">Inicio</a>
@@ -122,13 +120,7 @@ export default function Paradero() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="rm-footer">
-        © 2025 Red Metropolitana de Movilidad &mdash; Ministerio de Transportes y Telecomunicaciones &nbsp;|&nbsp;
-        <a href="#">Política de Privacidad</a> &nbsp;|&nbsp;
-        <a href="#">Términos de Uso</a> &nbsp;|&nbsp;
-        <a href="#">Accesibilidad</a>
-      </footer>
+
 
     </div>
   );
