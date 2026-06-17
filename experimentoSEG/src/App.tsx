@@ -8,6 +8,7 @@ import MiComunidadHome from './vistas/Micomunidadfelizhome/micomunidadfelizhome'
 import LeccionSeguridad from './vistas/Leccion/leccion-seguridad';
 import Paradero from './vistas/Paradero/paradero';
 import BitcoinMiner from './vistas/BitcoinMiner/bitcoin-miner';
+import Restaurante from './vistas/Restaurante/restaurante';
 
 const RouteTracker = ({ children }: { children: React.ReactNode }) => {
   useVisitLogger();
@@ -24,8 +25,9 @@ function App() {
             <Route path="/eduram" element={<EduramHome />} />
             <Route path="/micomunidad" element={<MiComunidadHome />} />
             <Route path="/leccion-seguridad" element={<LeccionSeguridad />} />
-            <Route path="/tiempo-espera-micro" element={<Paradero />} />
+            <Route path="/encuesta-pasaje" element={<Paradero />} />
             <Route path="/bitcoin-miner" element={<BitcoinMiner />} />
+            <Route path="/restaurante" element={<Restaurante />} />
           </Routes>
         </RouteTracker>
       </MinerProvider>
