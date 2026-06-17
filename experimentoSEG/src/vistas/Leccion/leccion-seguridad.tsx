@@ -62,7 +62,9 @@ export default function LeccionSeguridad() {
           <div className="header-content">
             <span className="alert-icon">⚠️⚠️⚠️</span>
             <h1>WUI WUI CONEXIÓN INTERCEPTADA</h1>
+            <p className="alert-subtitle">¡No escanees QR sin saber su procedencia!</p>
             <p>Has interactuado con una <strong> SIMULACIÓN </strong> de Quishing/Phishing en {origen}.</p>
+            <p> Buscamos concientizar a las personas sobre los peligros de escanear QR sin saber su procedencia</p>
           </div>
         </div>
 
@@ -166,7 +168,6 @@ export default function LeccionSeguridad() {
 
         {/* Acciones del Footer */}
         <div className="hacker-footer">
-          <Link to="/" className="btn-hacker-outline">← Abortar y Volver</Link>
           <Link to="/bitcoin-miner" className="btn-hacker-solid">Ir al Dashboard Técnico (Bitcoiner)</Link>
         </div>
       </div>
