@@ -35,12 +35,7 @@ export default function Paradero() {
       </header>
       <div className="rm-strip" />
 
-      {/* Breadcrumb */}
-      <div className="rm-breadcrumb">
-        <div className="rm-breadcrumb-inner">
-          Inicio &rsaquo; Tarjeta Bip! &rsaquo; <span>Actualizar datos de titular</span>
-        </div>
-      </div>
+
 
       {/* Main */}
       <main className="rm-main">
